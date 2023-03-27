@@ -84,7 +84,7 @@ const handleSubmit = async (e) => {
 
   //fetch data from server
 
-  const response = await fetch('https://codex-28io.onrender.com/', {
+  const response = await fetch('http://localhost:5000', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -102,7 +102,7 @@ const handleSubmit = async (e) => {
     const parsedData = data.bot.trim();
 
     typeText(messageDiv, parsedData);
-    console.log({parsedData});
+    
   } else {
     const err = await response.text();
 
