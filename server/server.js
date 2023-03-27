@@ -42,7 +42,8 @@ app.post('/', async (req, res) => {
         });
 
     } catch (error) {
-        res.status(500).send({ error });
+        console.error(error)
+        res.status(500).send( error || 'Something went wrong!');
     }
 });
 
