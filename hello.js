@@ -1,1 +1,3 @@
-console.log('Made in Kenya');
+const pair = "Made in Kenya with 💘";
+
+console.log(pair);
